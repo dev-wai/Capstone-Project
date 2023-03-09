@@ -1,22 +1,19 @@
 import React from 'react'
+import './Nav.css'
 
 const Nav = () => {
   return (
-    <div>
-        <img src='./../images/Logo.svg' alt='Little Lemons Logo'/>
-        <ul>
+    <div className='navbar__div'>
+        <img src='./../images/Logo.svg' alt='Little Lemons Logo' className='navbar__logo'/>
+        <ul className='navbar__links'>
             <li>
-                <a href='/#Header'>Header</a>
+                <a href='/#Header' className='navbar__link'>Header</a>
             </li>
-        </ul>
-        <ul>
             <li>
-                <a href='/#Main'>Main</a>
+                <a href='/#Main' className='navbar__link'>Main</a>
             </li>
-        </ul>
-        <ul>
             <li>
-                <a href='/#Footer'>Footer</a>
+                <a href='/#Footer' className='navbar__link'>Footer</a>
             </li>
         </ul>
     </div>
