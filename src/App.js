@@ -10,7 +10,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route index element={<Main />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Main />
