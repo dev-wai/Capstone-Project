@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from './Header/Header'
+import Specials from './Specials/Specials'
 
 const Main = () => {
   return (
-    <h1>Main</h1>
+    <>
+      <Header />
+      <Specials />
+    </>
   )
 }
 
