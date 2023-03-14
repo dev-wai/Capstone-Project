@@ -12,14 +12,14 @@ const Header = () => {
                     <h1 className='header_heading'>Little Lemons</h1>
                     <h3 className='header_subheading'>Chicago</h3>
                     <p className='header_para'>
-                        We are a faimly owned
-                        mediterrnean restaurant
-                        focused on traditional
-                        recipes served with modern
+                        We are a faimly owned<br/>
+                        mediterrnean restaurant<br/>
+                        focused on traditional<br/>
+                        recipes served with modern<br/>
                         twist.
                     </p>
                     <div className='header_button'>
-                        <Button title="Reserve a Table" link="/" />
+                        <Button title="Reserve a Table" link="/reservation" />
                     </div>
                 </div>
                 <div className='header_col_2'>

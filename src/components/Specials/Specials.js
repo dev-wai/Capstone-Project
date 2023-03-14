@@ -40,7 +40,7 @@ const Specials = () => {
                     <h1 className='specials_title'>This weeks specials!</h1>
                 </div>
                 <div>
-                    <Button title="Online Menu" link="/" />
+                    <Button title="Online Menu" link="/orderonline" />
                 </div>
             </div>
             <div className='specials_row2'>
