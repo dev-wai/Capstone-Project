@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 import "./BookingForm.css";
 
 
-const BookingForm = (props) => {
+const BookingForm = ({availableTimes, dispatch, submitForm}) => {
     const [date, setDate] = useState("");
     const [time, setTime] = useState("Time");
     const [numGuest, setNumGuest] = useState(0);
     const [occasion, setOccasion] = useState("Occasion");
 
-    const timeOptions = props.availableTimes?.map(times => {
+    const timeOptions = availableTimes.map(times => {
         return(
             <option key={times}>{times}</option>
         )
@@ -25,6 +25,7 @@ const BookingForm = (props) => {
         e.preventDefault();
         alert("Reserved!");
         clearForm();
+        return submitForm(e.target.values);
     }
   return (
     <>
@@ -40,7 +41,7 @@ const BookingForm = (props) => {
                     value={date}
                     onChange={(e) => {
                         setDate(e.target.value)
-                        props.dispatch({type:'add', date: e.target.value});
+                        dispatch({type:'add', date: e.target.value});
                     }}
                     required
                 />

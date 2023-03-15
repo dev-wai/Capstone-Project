@@ -8,6 +8,7 @@ import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import {Routes, Route} from 'react-router-dom';
+import ConfirmedBooking from './components/ConfirmedBooking';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="orderonline" element={<OrderOnline />} />
         <Route path='login' element={<Login />} />
         <Route path='reservation' element={<Reservation />} />
+        <Route path='bookingconfirmed' element={<ConfirmedBooking />} />
       </Routes>
 
       <footer>
